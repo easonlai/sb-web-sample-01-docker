@@ -1,5 +1,5 @@
 # Sample Java Web App in Spring Boot framework with Containerization
-Readme update 1.1
+Readme update 1.2
 
 ## Build with Maven
 ```shell
@@ -29,3 +29,8 @@ http://localhost:8080
 
 Or you can pull this sample from my Docker Hub.
 https://cloud.docker.com/u/easonlai/repository/docker/easonlai/sb-web-sample-01-docker
+
+## Deploy to K8S
+```shell
+kubectl apply -f sb-web-sample-01-docker-kube.yml
+```
