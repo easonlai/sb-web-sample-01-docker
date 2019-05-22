@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - name: sb-web-sample-01-docker
-        image: easonlai/sb-web-sample-01-docker
+        image: qooacr01.azurecr.io/sb-web-sample-01-docker
         ports:
         - containerPort: 8080
       imagePullSecrets:
