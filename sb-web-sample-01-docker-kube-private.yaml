@@ -4,10 +4,12 @@ metadata:
   name: sb-web-sample-01-docker
   annotations:
     service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+    service.beta.kubernetes.io/azure-load-balancer-internal-subnet: "AKSSubnet2" #Pin ILB to specific subnet
   labels:
     run: sb-web-sample-01-docker
 spec:
   type: LoadBalancer
+  # loadBalancerIP: 10.0.4.88 #Specific static IP address as needed
   ports:
   - port: 8080
     targetPort: 8080
